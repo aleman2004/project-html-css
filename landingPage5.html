@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- هان لازم استخدم grid 3 بس انا ما بعرف عشان هيك سبتها  -->
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap" rel="stylesheet">
+    <title>Landing Page 5</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: "Assistant", sans-serif;
+            font-optical-sizing: auto;
+        }
+        .big-container{
+            display: grid;
+            background-color: #E5EEFF;
+            margin: 0 auto;
+            width: calc(1247px + 50px);
+            padding: 298px 25px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr; 
+            align-items: flex-start; 
+            width: 100%;
+        }
+        
+
+        img {
+            width: 296px;
+            height: 270px;
+        }
+        
+        .left-images {
+            display: grid;
+            grid-template-columns: repeat(2, auto); 
+            grid-template-rows: repeat(2, auto); 
+            gap: 10px;
+            width: 50%;
+        }
+
+        .middle {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .bottom-half {
+            display: flex;
+            align-items: auto;
+        }
+
+        .right {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); 
+            grid-template-rows: repeat(3, auto); 
+            gap: 10px;
+            max-height: 852px;
+        }
+
+        .title-box {
+            background-color: #020253;
+            height: 545px;
+            /* opacity: 1; */
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            margin-left: 5px;
+            padding: 90px;
+            justify-content: center;
+        }
+
+        .title-box>h2 {
+            color: #0EE1DA;
+            font-size: 61px;
+        }
+
+        .title-box>p {
+            color: #F9F9F9;
+            font-size: 20px;
+        }
+
+        .form-box {
+            background-color: #8E097C;
+            height: 852px;
+            text-align: center;
+            display: flex;
+            vertical-align: middle;
+            justify-content: center;
+            flex-direction: column;
+            margin-right: 20px;
+            margin-bottom: 266px;
+            margin-left: 20px;
+            padding: 50px;
+
+        }
+
+        .form-box>h1 {
+            color: #fff;
+            font-size: 35px;
+        }
+
+        .form-box>p {
+            color: #fff;
+            font-size: 20px;
+        }
+
+        label {
+            display: block;
+            color: #0EE1DA;
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        input[type=text] {
+            background-color: #E5EEFF;
+            width: 500.27px;
+            height: 59.91px;
+            border-bottom: 2px #0EE1DA;
+        }
+
+        input[type=button] {
+            height: 59.56px;
+            width: 501px;
+            background-color: #0EE1DA;
+            color: #011560;
+            text-align: center;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        input [name=experience] {
+            height: 172.2px;
+        }
+        .forme{
+            margin-top: 70px;
+        }
+
+        #experience{
+            height: 170px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .big-container {
+                width: auto;
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+            }
+        
+            .container {
+                display: flex;
+                flex-direction: column;
+            }
+        
+            .title-box {
+                width: 100%;
+                padding: 20px; 
+            }
+        
+            .left-images, .middle {
+                display: grid;
+                grid-template-columns: repeat(2, auto); 
+                gap: 10px;
+                width: 100%;
+            }
+
+            .bottom-half{
+                display: flex;
+                flex-direction: column;
+            }
+        
+            .form-box {
+                width: 100%;
+            }
+        
+            .right {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(4, auto);
+                gap: 10px;
+                width: 100%;
+            }
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="big-container">
+        <div class="container">
+            <!--     div>img*4+div+div>img*2+div>img*2+div+div>img*6 -->
+            <div clas="left-images">
+                <img src="./images/india1.png" alt="" class="top-images" >
+                <img src="./images/india2.png" alt="" class="top-images">
+                <img src="./images/india3.png" alt="">
+                <img src="./images/india4.png" alt="">
+            </div>
+
+            <div class="title-box">
+                <h2>לגלות את העולם</h2><br>
+                <p>לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא מקום” בעת עריכ.</p>
+            </div>
+        </div>
+        
+        <div class="middle">
+            <img src="./images/india5.png" alt="" >
+            <img src="./images/india6.png" alt="">
+            <img src="./images/india7.png" alt="">
+            <img src="./images/india8.png" alt="">
+        </div>
+
+        <br>
+        <div class="bottom-half">
+            <div class="form-box">
+                <h1>ספרו לנו על החוויה שלכם</h1>
+                <p>לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא מקום” בעת עריכ.</p>
+                <form action="" class="forme">
+                    <label for="name">שם מלא </label>
+                    <input type="text" name="" id="name"><br>
+                    <label for="mail">דוא״ל</label>
+                    <input type="text" name="" id="mail"><br>
+                    <label for="experience">החוויה שלכם</label>
+                    <input type="text" name="experience" id="experience"><br>
+                    <br>
+                    <input type="button" value="שליחה"><br>
+                </form>
+            </div>
+
+            <div class="right">
+                <img src="./images/india9.png" alt="">
+                <img src="./images/india10.png" alt="">
+                <img src="./images/india11.png" alt="">
+                <img src="./images/india12.png" alt="">
+                <img src="./images/india13.png" alt="" class="bottom-images">
+                <img src="./images/india14.png" alt="" class="bottom-images">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

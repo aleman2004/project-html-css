@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Heebo:wght@700&family=Satisfy&family=Varela+Round&display=swap" rel="stylesheet">
+    <title>landing page 4 </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: "Assistant", sans-serif;
+        }
+
+        .container {
+            background-image: url(./images/lan5.png);
+            width: 1920px;
+            height: 743px;
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        h1 {
+            color: #D3E10E;
+            font-size: 86px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        p {
+            color: #F9F9F9;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .container2 {
+            display: flex;
+            width: 100%;
+            max-width: 1220px;
+            margin: 0 auto;
+            justify-content: center;
+        }
+        
+        .form-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 600px;
+            justify-content: center;
+        }
+
+        .item {
+            flex: 1;
+            padding: 15px;
+            text-align: right;
+        }
+
+        .item1,
+        .item2 {
+            flex-grow: 1;
+            color: #011560;
+            font-size: 16px;
+            text-align: right;
+        }
+
+        input[type="button"] {
+            width: 166px;
+            background-color: #D3E10E;
+            color: #011560;
+            font-size: 22px;
+            height: 50px;
+            border: none;
+            margin-top: 20px;
+            font-weight: 600;
+        }
+
+
+        input[type="text"] {
+            background-color: #F6F6F6;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: 3px solid #D3E10E;
+            height: 50px;
+            width: 417px;
+        }
+        label{
+            font-weight: 600;
+            text-align: right;
+        }
+        img{
+            display: none;
+        }
+
+        @media screen and (max-width: 768px) {
+            .container {
+                display: none;
+            }
+            img{
+                display: block;
+                width: 100%;
+            }
+
+            .form-container {
+                flex-direction: column; 
+                width: 100%; 
+                max-width: 400px; 
+                margin: 0 auto; 
+            }
+
+
+            .item {
+                width: 100%; 
+                text-align: right; 
+            }
+
+            input[type="text"],
+            input[type="button"] {
+                width: 100%; 
+            }
+            h1,p{
+                display: none;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <img src="./images/lan6.2.png" alt="תן לנו להוביל אותך קדימה">
+    <div class="container">
+        <h1>תן לנו להוביל אותך קדימה</h1>
+        <p>לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא מקום” בעת עריכ.</p>
+    </div>
+    <br>
+    <div class="container2">
+        <div class="form-container">
+            <div class="item item1">
+                <label for="">שם מלא</label><br>
+                <input type="text">
+            </div>
+
+            <div class="item item2">
+                <label for="">דוא״ל</label><br>
+                <input type="text">
+            </div>
+
+            <div class="item item3">
+                <input type="button" value="שליחה">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,191 @@
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        
+    }
+
+    /* Nav Bar Style */
+    body {
+        margin: 0;
+        text-align: center;
+    }
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0; 
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 60px;
+        background-color: white;
+        box-shadow: 0 3px 4px rgba(0, 0, 0, 0.215);
+        z-index: 1;
+        font-family: "Heebo", sans-serif;
+    }
+
+    .left-section {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo img {
+        width: 80px;
+        height: auto;
+        margin-left: 20px;
+    }
+
+    .nav-links {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    .nav-links li {
+        margin-right: 30px;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: black;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .nav-links a:hover {
+        color: aqua;
+        border-bottom: 4px solid aqua;
+    }
+
+    .hamburger-menu {
+        display: none; 
+        cursor: pointer;
+    }
+
+    /* The End Of Nav Bar Style */
+
+    .text-container>h1 {
+        font-family: "Heebo", sans-serif;   
+        font-weight: 900;
+    }
+
+    .text-container>p {
+        font-family: "Heebo", sans-serif;
+    }
+
+    .header-container {
+        background-image:
+        linear-gradient(to bottom, #00d4dfbb, #13E8F163), url('./images/bg2.jpg');
+        height: 28.8125em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 55%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+
+    button {
+        padding: 10px 20px;
+        margin: 5px;
+        font-size: 16px;
+        border: none;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+        border-radius: 20px;
+        transition: all 0.3s ease;
+        font-family: "Heebo", sans-serif;
+        font-weight: 700;
+    }
+
+    .text-container button:hover {
+        background-color: #2980b9;
+        
+    }
+
+    .technologies {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: center;
+        box-shadow: 0 3px 4px rgba(0, 0, 0, 0.215);
+        z-index: 2;
+    }
+
+    .project-container {
+        height: 950px;
+        background-color: #EBFEFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-container>img {
+        box-shadow: 0px 0px 40px #00000066;
+        max-width: 100%;
+        max-height: 100%;
+        height: 600px;
+    }
+
+    .rights {
+        background-color: #00d4dfbb;
+        font-family: "Heebo", sans-serif;
+    }
+
+    @media screen and (max-width: 768px) {
+        .navbar {
+            padding: 5px 20px; 
+        }
+    
+        .logo img {
+            width: 40px; 
+            margin-left: 5px; 
+        }
+
+        .project-container img{
+            width: auto;
+            height: auto;
+        }
+    
+        .nav-links {
+            display: none; 
+        }
+    
+        .nav-links.active {
+            display: flex; 
+            flex-direction: column;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background-color: white;
+            border: 1px solid #ccc;
+        }
+    
+        .nav-links li {
+            margin-right: 0;
+            margin-bottom: 10px; 
+        }
+    
+        .nav-links a {
+            font-size: 18px; 
+        }
+
+        .hamburger-menu {
+            display: block;
+            z-index: 2;
+        }
+    }
+    

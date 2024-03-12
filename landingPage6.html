@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page6</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@700&family=Satisfy&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+        font-family: 'Heebo', Black;
+        }
+
+        .img {
+            float: left;
+            width: 30%;
+            overflow-x: auto;
+            white-space: nowrap;
+            padding: 80px;
+        }
+        .phoneImg{
+            width: 100%; 
+            height: 100%;
+        }
+
+        .container {
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: column;
+            float: left;
+            width: 70%;
+            overflow-x: auto;
+            white-space: nowrap;
+            padding-top: 90px;
+            padding-left: 200px;
+        }
+
+        .forme {
+            align-items: flex-end;
+        } 
+
+        
+        .field-group {
+            display: flex;
+            justify-content: flex-end;
+        }
+        
+
+        .field-group>.field {
+            flex: 1 1 0;
+            margin-left: 0.75rem;
+        }
+
+        h2 {
+            color: #FDBD03;
+            font-size: 66px;
+            text-align: right;
+        }
+
+        p {
+            color: #020253;
+            font-size: 20px;
+            text-align: right;
+        }
+
+        label {
+            color: #2C2C2C;
+            font-size: 16px;
+            text-align: right;
+        }
+
+        input[type="text"] {
+            background-color: #E5EEFF;
+            border-bottom: #FDBD03 solid 4px;
+            border-top: none;
+            border-right: none;
+            border-left: none;
+        }
+
+        input[type="button"] {
+            color: #000000;
+            font-size: 22px;
+            background-color: #FDBD03;
+            width: 166px;
+            height: 50px;
+            border: none;
+            margin-right: 10px;
+            float: left;
+        }
+
+        .input {
+            width: 417.5px;
+            height: 50px;
+        }
+
+        .description {
+            width: 854.5px;
+            height: 142.51px;
+        }
+
+        .line {
+            background-color: #FDBD03;
+            position: absolute;
+        }
+
+        .top-line {
+            width: 434px;
+            height: 18px;
+            top: 0px;
+            right: 0px;
+            opacity: 1;
+        }
+
+        .bottom-line {
+            width: 900px;
+            height: 18px;
+            left: 0px;
+            bottom: 0px;
+        }
+        .icons{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color:#FDBD03 ;
+            width: 95px;
+            height: 95px;
+            border-radius: 50px;
+            z-index: 1; 
+        }
+        .whatsupIcon{
+            margin-top: 63px;
+            margin-left: 65px;
+        }
+
+        .bottom-icons{
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            justify-content:space-between;
+            z-index: 2;
+            left: 65px;
+            bottom: 30px;
+            width: 450px;
+        }
+
+        @media screen and (max-width: 600px) {
+            body{
+                display: flex;
+                flex-direction: column;
+            }
+            .top-line{
+                width: 320px;
+                height: 10px;
+                top: 0px;
+                right:0px;
+            }
+            .img{
+                width: 79px;
+                height: 119px;
+                float: none;
+                padding: 0;
+                margin: 0 auto; 
+            }
+            .whatsapp, .whatsupIcon{
+                display: none;
+            }
+            h2{
+                font-size: 40px;
+                text-align: center;
+                padding-top: 10px;
+            }
+            p{
+                font-size: 15px;
+                text-align: center;
+            }
+            .field-group {
+                flex-direction: column;
+                align-items: center;
+            }
+            .forme{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .container{
+                margin-top: 50px;
+                padding: 0px;
+                width: 100%;
+            }
+
+            input[type="text"] {
+                width: 309px;
+                height: 37px;
+            }
+            input[type="button"] {
+                width: 310px;
+                height: 37px;
+                margin-bottom: 30px;
+            }
+            .bottom-icons{
+                width: 250px;
+            }
+            .icons{
+                width: 46px;
+                height: 46px;
+            }
+            .bottom-line{
+                width: 100%;
+                height: 10px;
+            }
+
+            .input {
+                width: 100%;
+            }
+            .field-group > .field {
+                margin-left: 0;
+            }
+            .description{
+                margin-bottom: 20px;
+            }
+
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="line top-line"></div>
+    <div class=" icons whatsupIcon">
+    <img src="./images/Icon awesome-whatsapp.svg" class="whatsapp" alt="whats up">
+</div>
+    <div class="container">
+        <div class="texts">
+            <h2 >ייעוץ חינם</h2>
+            <p>לקבלת ייעוץ חינם, מוזמנים להשאיר פרטים <br> ומומחה יחזור אליכם עם מענה.</p>
+        </div>
+        <br>
+        <form action="" class="forme">
+            <div class="field-group">
+                <div class="field">
+                    <label for="">שם מלא</label>
+                    <div>
+                        <input type="text" class="input">
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="">דוא״ל</label>
+                    <div>
+                        <input type="text" class="input">
+                    </div>
+                </div>
+            </div>
+            
+            <label for="">שם מלא</label><br>
+            <input type="text" class="description"><br><br>
+            <input type="button" value="שליחה">
+        </form>
+    </div>
+
+    <div class="img">
+        <img src="./images/phone6.png" class="phoneImg" alt="phone">
+    </div>
+
+    <div class="bottom-icons">
+        <img src="" alt="" class="icons b-icons">
+        <img src="" alt="" class="icons b-icons">
+        <img src="" alt="" class="icons b-icons">
+        <img src="" alt="" class="icons b-icons">
+    </div>
+    <div class="line bottom-line"></div>
+
+</body>
+
+</html>

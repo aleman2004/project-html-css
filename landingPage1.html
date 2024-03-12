@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<!--جاهز ط -->
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .background {
+            background-image: url(./images/lP1.png);
+            background-repeat: no-repeat;
+            padding-top: 100px;
+            background-size: cover;
+            height: 100vh;
+
+        }
+
+        .formBox {
+            margin-bottom: -70px;
+            background-color: #1A1A1AD4;
+            width: 569px;
+            height: 643px;
+            display: block;
+            margin-left: auto;
+            margin-right: 80px;
+            padding: 80px;
+            font-family: "Heebo", sans-serif;
+            font-optical-sizing: auto;
+            
+        }
+
+        h2,
+        p,
+        .forme {
+            display: block;
+            margin: auto;
+            width: 100%;
+        }
+
+        .forme {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        h2 {
+            color: #fff;
+            font-size: 36px;
+            text-align: right;
+            font-weight: 900;
+        }
+
+        p {
+            color: #F9F9F9;
+            text-align: right;
+            font-size: 20px;
+        }
+
+        input[type="button"] {
+            color: #fff;
+            background-color: #D31C75;
+            border: none;
+            width: 166px;
+            height: 50px;
+            font-size: 22px;
+            font-family: "Heebo", sans-serif;
+            margin-top: 43px;
+        }
+
+        input[type="text"] {
+            border: #D31C75 1px;
+            width: 417.5px;
+            height: 50px;
+        }
+
+        label {
+            font-size: 16px;
+            text-align: right;
+            color: #fff;
+            font-family: "Heebo", sans-serif;
+            margin-top: 17px;
+            font-weight: 700;
+        }
+        @media screen and (max-width: 600px) {
+
+    .background {
+        background-image: url(./images/lP1.2.png);
+        background-size: contain;
+        background-position: top;
+        height: auto;
+        
+    }
+    .formBox {
+        width: 80%;
+        max-width: 600px;
+        margin: auto;
+        padding: 76px;
+    }
+    .forme{
+        display: flex; 
+        flex-direction: column; 
+        align-items: left;
+    }
+    h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+    p {
+        font-size: 15px;
+        text-align: center;
+    }
+    input[type="text"] {
+        height: 27px;
+        width: 229px;
+    }
+    input[type="button"] {
+        height: 33px;
+        width: 76px;
+        font-size: 15px;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <div class="background">
+        <div class="formBox">
+            <h2>תן לנו להוביל אותך קדימה</h2><br>
+            <p>לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא מקום” בעת עריכ.</p><br>
+            <form action="" class="forme">
+                <label>שם מלא</label>
+                <input type="text">
+                <label>דוא״ל</label>
+                <input type="text">
+                <input type="button" value="שליחה">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

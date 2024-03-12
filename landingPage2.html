@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@700&family=Satisfy&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@700&family=Satisfy&family=Varela+Round&display=swap" rel="stylesheet">
+    <title>landing Page 2</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: linear-gradient(to bottom, #281EFF, #2DFF8C);
+            background-size: cover;
+            min-height: 100vh;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .items {
+            width: 1100px;
+            height: 407px;
+        }
+
+        h1 {
+            font-size: 160px;
+            color: #fff;
+            text-shadow: #00000087 5px 5px 36px;
+            text-align: center;
+            font-family: "Satisfy", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        h3 {
+            font-size: 32px;
+            color: #fff;
+            text-align: center;
+            font-family: "Varela Round", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        p {
+            color: #F9F9F9;
+            font-size: 16px;
+            text-align: center;
+            font-family: "Varela Round", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .forme {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+        }
+
+        label {
+            font-size: 16px;
+            color: #F9F9F9;
+        }
+
+        input[type="text"] {
+            background-color: #F6F6F624;
+            border: 2px solid #FFFFFF;
+            width: 417.5px;
+            height: 50px;
+            margin-left: 20px;
+        }
+
+        input[type="button"] {
+            background-color: #fff;
+            width: 206.41px;
+            height: 50px;
+            color: #1C1C1C;
+            font-size: 16px;
+            text-align: center;
+            border: none;
+        }
+        @media screen and (max-width: 600px) {
+            .container{
+                padding: 20px;
+            }
+            h1{
+                font-size: 60px;
+            }
+            h3{
+                font-size: 18px;
+            }
+            p{
+                font-size: 16px;
+            }
+            .items {
+                width: 90%;
+                max-width: 600px;
+            }
+            .forme{
+                flex-direction: column;
+                align-items: center;
+            }
+            .inputs {
+                width: 100%; 
+                display: flex;
+                flex-direction: column; 
+                margin-bottom: 20px; 
+            }
+            input[type="text"] {
+                width: calc(100% - 20px);
+                margin: 0 auto;
+            }
+            input[type="button"] {
+                width: calc(100% - 20px);
+            }
+        }
+        
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="items">
+            <h1>Here & Now</h1>
+            <h3>רצינו להזמין אתכם להנות משלל מתנות</h3><br>
+            <p>לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית לפרומי בלוף קינץ תתיח לרעח. לת צשחמי צש בליא, מנסוטו
+                צמלח
+                לביקו
+                ננבי, צמוקו בלוקריה.</p>
+            <br><br>
+            <form action="" class="forme">
+            <div class="inputs">
+                <label for="">שם</label>
+                <input type="text">
+            </div>
+            <div class="inputs">
+                <label for="">דוא״ל</label>
+                <input type="text">
+            </div>
+                <input type="button" value="עדכנו אותי">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
